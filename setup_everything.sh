@@ -58,3 +58,10 @@ mv JetBrainsMono-2.242.zip ~/Downloads/JetBrainsMono-2.242.zip
 mkdir ~/.local/share/fonts
 unzip ~/Downloads/JetBrainsMono-2.242.zip -d ~/.local/share/fonts
 cp ~/.local/share/fonts/ttf/*.ttf ~/.local/share/fonts/ttf
+
+# setting terminal zsh with autosuggestion and syntax highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc
+
+git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ~/path/to/fsh
+echo 'source ~/path/to/fsh/fast-syntax-highlighting.plugin.zsh' >> ~/.zshrc
