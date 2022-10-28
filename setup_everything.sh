@@ -16,6 +16,10 @@ echo \
 apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 
+#install docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
 # installing asdf and nodejs
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 echo ". $HOME/.asdf/asdf.sh" >> ~/.zshrc
