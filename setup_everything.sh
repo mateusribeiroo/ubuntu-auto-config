@@ -10,6 +10,9 @@ snap install notion-snap postman
 zsh
 2
 
+# returning to bash
+bash
+
 # installing docker 
 apt-get install ca-certificates gnupg curl lsb-release -y
 mkdir -p /etc/apt/keyrings
@@ -67,6 +70,12 @@ mv JetBrainsMono-2.242.zip ~/Downloads/JetBrainsMono-2.242.zip
 mkdir ~/.local/share/fonts
 unzip ~/Downloads/JetBrainsMono-2.242.zip -d ~/.local/share/fonts
 cp ~/.local/share/fonts/ttf/*.ttf ~/.local/share/fonts/ttf
+
+# install spaceship
+zsh
+mkdir -p "$HOME/.zsh"
+git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git "$HOME/.zsh/spaceship"
+source "$HOME/.zsh/spaceship/spaceship.zsh"
 
 # setting terminal zsh with autosuggestion and syntax highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
