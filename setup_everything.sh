@@ -1,7 +1,9 @@
 #!/bin/sh
 
+apt update
+
 # some installs 
-apt-get update install git zsh gnome-tweaks gparted wget -y
+apt-get install git zsh gnome-tweaks gparted wget -y
 snap install notion-snap postman
 
 # installing docker 
