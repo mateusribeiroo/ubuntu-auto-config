@@ -6,6 +6,10 @@ apt update
 apt-get install git zsh gnome-tweaks gparted wget -y
 snap install notion-snap postman
 
+# config zsh
+zsh
+2
+
 # installing docker 
 apt-get install ca-certificates gnupg curl lsb-release -y
 mkdir -p /etc/apt/keyrings
@@ -25,7 +29,6 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 echo ". $HOME/.asdf/asdf.sh" >> ~/.zshrc
 echo ". $HOME/.asdf/asdf.sh" >> ~/.bashrc
 
-echo ". $HOME/.asdf/completions/asdf.bash" >> ~/.zshrc
 echo ". $HOME/.asdf/completions/asdf.bash" >> ~/.bashrc
 
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
