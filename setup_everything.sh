@@ -69,7 +69,6 @@ wget https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip
 mv JetBrainsMono-2.242.zip ~/Downloads/JetBrainsMono-2.242.zip
 mkdir ~/.local/share/fonts
 unzip ~/Downloads/JetBrainsMono-2.242.zip -d ~/.local/share/fonts
-cp ~/.local/share/fonts/ttf/*.ttf ~/.local/share/fonts/ttf
 
 # install spaceship
 zsh
